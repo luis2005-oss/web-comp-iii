@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #76dbdf 0%, #251b1b 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+}
+
+.section_1{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width:100%;
+    min-height: 80vh;
+    background: rgba(255,255,255,0.10);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    margin: 2rem auto;
+    max-width: 1100px;
+    gap: 3rem;
+    position: relative;
+}
+
+.section_1_img{
+    align-items: center;
+    justify-content:center ;
+    margin: 1rem 0 1rem 1rem;
+    width: 100%;
+    max-width: 410px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.15);
+    display: block;
+    align-self: flex-start;
+}
+
+.section_1_contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.section_1 p {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    width: 100%;
+}
+
+.section_1_titulo{
+    padding: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
+    font-family: monospace, 'Fira Mono', monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1a535c;
+    text-shadow: 1px 2px 8px rgba(37, 27, 27, 0.12);
+    border-bottom: 2px solid #76dbdf;
+    letter-spacing: 2px;
+    text-decoration: double;
+    text-align: left;
+    width: 100%;
+}
+
+.section_1_img{
+    margin: rem;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.15);
+    align-items: center;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .section_1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0.5rem;
+        max-width: 98vw;
+        gap: 0;
+    }
+    .section_1_img {
+        max-width: 95vw;
+        margin: 1rem auto;
+        align-self: center;
+    }
+    .section_1_contenido {
+        align-items: center;
+        padding: 0;
+    }
+    .section_1_titulo {
+        font-size: 1.5rem;
+    }
+    .section_1 p {
+        font-size: 1rem;
+    }
+}
